@@ -1,0 +1,4 @@
+     hooks:
+     -   id: eslint
++        files: \.([jt]sx?|vue)$  # *.js, *.jsx, *.ts, *.tsx and *.vue
++        types: [file]

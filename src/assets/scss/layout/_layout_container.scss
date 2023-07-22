@@ -1,0 +1,16 @@
+.layout-container {
+    .display-none {
+        display: none;
+    }
+    .header-bar {
+        .v-toolbar__content {
+            height: 80px !important;
+          }
+    }
+    .v-navigation-drawer {
+        transform: none !important;
+    }
+    .v-main {
+        max-width: none !important;
+    }
+}
