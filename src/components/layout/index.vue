@@ -1,15 +1,17 @@
 <template>
-  <div id="main" class="layout-container">
+  <div id="main" class="layout-container bg-[#F1F5F9]">
     <v-layout class="rounded-md">
       <v-navigation-drawer :rail="rail">
         <NavBar @change="handleDisableFlagNav" />
       </v-navigation-drawer>
 
-      <v-app-bar class="overflow-visible h-20 header-bar">
+      <v-app-bar class="overflow-visible header-bar">
         <HeaderBar />
       </v-app-bar>
-      <v-main class="h-[calc(100vh-120px)] w-[calc(100vw)] mt-[50px] max-w-none">
-        <slot name="router-view"></slot>
+      <v-main class="h-full">
+        <div class="p-6 h-full">
+          <slot name="router-view"></slot>
+        </div>
       </v-main>
     </v-layout>
   </div>
