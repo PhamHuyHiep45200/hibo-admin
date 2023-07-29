@@ -21,15 +21,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "linters": {
-      "src/**/*.{js,vue}": ["npm run lint"]
-    },
-    "ignore": ["src/**/*.spec.js", "src/**/*.test.js"]
- },
+      "*.{ts,vue}": ["eslint"]
+    }
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
