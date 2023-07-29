@@ -5,7 +5,7 @@
 <script setup lang="ts">
 import router from "../router";
 
-console.log("sosđ")
+console.log("sosjkđ")
 
 const redirectUser =()=>{
   router.push("/user")
