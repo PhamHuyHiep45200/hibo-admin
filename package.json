@@ -8,26 +8,14 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.vue src",
-    "precommit": "lint-staged"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
     "path": "^0.12.7",
     "vue": "^3.3.4",
     "vue-router": "^4.0.13",
     "vuetify": "^3.3.9"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "linters": {
-      ".*vue": ["eslint --ext .js,.vue src"]
-    }
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.1.0",
@@ -36,6 +24,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.45.0",
     "eslint-plugin-vue": "^9.15.1",
+    "husky": "^8.0.3",
     "postcss": "^8.4.27",
     "sass": "^1.64.1",
     "tailwindcss": "^3.3.3",
