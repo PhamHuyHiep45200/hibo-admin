@@ -1,0 +1,25 @@
+.header-container {
+  position: relative;
+
+  .display-modal-profile {
+    display: block;
+  }
+
+  .hide-modal-profile {
+    display: none;
+  }
+
+  .header-bar-modal {
+    position: absolute;
+    right: -190px;
+    top: 50px;
+    z-index: 999;
+  }
+
+  .v-list-item--active > .v-list-item__overlay {
+    opacity: 0;
+  }
+  .active-menu {
+    background: $backgroundFocusMenu;
+  }
+}

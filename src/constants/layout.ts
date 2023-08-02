@@ -1,4 +1,4 @@
-import { NameMenuNavType } from "../types/layout";
+import { NameMenuNavType, MenuListProfile } from "../types/layout";
 
 export const listNameMenuNav: NameMenuNavType[] = [
   {
@@ -49,5 +49,50 @@ export const listNameMenuNav: NameMenuNavType[] = [
         path: "/user"
       }
     ]
+  },
+]
+
+export const listNameMenuProfile: MenuListProfile[] = [
+  {
+    id: 1,
+    nameMenu: "Profile",
+    icon: "mdi-account-outline",
+    path: "/profile"
+  },
+  {
+    id: 2,
+    nameMenu: "Chat",
+    icon: "mdi-chat-processing-outline",
+    path: "/chat"
+  },
+  {
+    id: 3,
+    nameMenu: "Email",
+    icon: "mdi-email-outline",
+    path: "/email"
+  },
+  {
+    id: 4,
+    nameMenu: "Todo",
+    icon: "mdi-clipboard-check-outline",
+    path: "/todo"
+  },
+  {
+    id: 5,
+    nameMenu: "Settings",
+    icon: "mdi-cog",
+    path: "/settings"
+  },
+  {
+    id: 6,
+    nameMenu: "Faq",
+    icon: "mdi-help-circle-outline",
+    path: "/faq"
+  },
+  {
+    id: 7,
+    nameMenu: "Logout",
+    icon: "mdi-logout",
+    path: "/log-out"
   },
 ]

@@ -7,7 +7,7 @@
               <NavBar @change="handleDisableFlagNav"/>
             </v-navigation-drawer>
 
-            <v-app-bar title="Application bar">
+            <v-app-bar class="overflow-visible">
                 <HeaderBar />
             </v-app-bar>
 

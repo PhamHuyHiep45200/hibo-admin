@@ -47,7 +47,7 @@ import { ref } from "vue";
 import { NameMenuNavType } from "../../types/layout";
 import router from "../../router";
 
-const listMenuNavBar = ref<NameMenuNavType[]>(listNameMenuNav);
+const listMenuNavBar = ref<NameMenuNavType[]>(listNameMenuNav)
 const idActive = ref<number>(0)
 
 const handleActiveMenu = (menu: NameMenuNavType) => {
