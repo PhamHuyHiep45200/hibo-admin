@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="navbar-container-menu">
-        <MenuNavBarVue />
+        <MenuNavBar />
       </div>
     </div>
     <div @click="handleOpenNav" class="cursor-pointer navbar-container-open">
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import MenuNavBarVue from "./MenuNavBar.vue"
+import MenuNavBar from "./MenuNavBar.vue"
 import { ref } from "vue";
 
 const emit = defineEmits(["change", "update"])

@@ -1,5 +1,5 @@
-<script setup lang="ts">
-import LayoutMain from "./components/layout/index.vue"
+<script lang="ts" setup>
+import LayoutMain from "./components/layout/index.vue";
 </script>
 
 <template>
@@ -11,6 +11,6 @@ import LayoutMain from "./components/layout/index.vue"
 </template>
 
 <style lang="scss">
-@import '@/assets/scss/global.scss';
+// @import "@/assets/scss/global.scss";?
 </style>
 

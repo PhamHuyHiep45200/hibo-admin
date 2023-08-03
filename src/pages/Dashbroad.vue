@@ -1,11 +1,13 @@
 <template>
-    <v-btn size="x-large" @click="redirectUser" class="text-red"> redirect User </v-btn>
+  <v-btn size="x-large" @click="redirectUser" class="text-red">
+    redirect User
+  </v-btn>
 </template>
 
 <script setup lang="ts">
 import router from "../router";
 
-const redirectUser =()=>{
-  router.push("/user")
-}
+const redirectUser = () => {
+  router.push("/user");
+};
 </script>
