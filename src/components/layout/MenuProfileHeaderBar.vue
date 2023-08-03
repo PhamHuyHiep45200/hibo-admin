@@ -20,20 +20,17 @@ import router from "../../router";
 import { MenuListProfile } from "../../types/layout";
 import { listNameMenuProfile } from "../../constants/layout";
 
-const props = defineProps({
+defineProps({
   modalProfileFlag: {
     type: Boolean,
     default: false
   }
 })
-console.log(props.modalProfileFlag);
 const idMenuProfile = ref<number>(0)
 const listMenuProfile = ref<MenuListProfile[]>(listNameMenuProfile)
 
 const handleMenu = (menuProfile: MenuListProfile) => {
   idMenuProfile.value = menuProfile.id
-  console.log(idMenuProfile.value);
-  
   if (menuProfile.path) {
     router.push(menuProfile.path)
   }
