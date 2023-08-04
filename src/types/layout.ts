@@ -12,3 +12,16 @@ export interface MenuListProfile {
     icon: string,
     path: string
 }
+
+export interface MenuListHeader {
+    id: number,
+    nameMenu: string,
+    icon: string,
+    path: string,
+    numOf: number
+}
+
+export interface ProfileUser {
+    nameUser: string,
+    imagePath: string
+}

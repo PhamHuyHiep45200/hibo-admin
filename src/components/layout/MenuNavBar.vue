@@ -21,7 +21,10 @@
                 :prepend-icon="menuChild.icon"
                 @click="handleActiveMenu(menuChild)"
                 class="px-2.5 py-3 text-sm menu-child"
-                :class="[{'display-none-icon' : !menuChild.children}, {'active-menu' : menuChild.id === idActive}]"
+                :class="[
+                  { 'display-none-icon': !menuChild.children },
+                  { 'active-menu': menuChild.id === idActive },
+                ]"
               ></v-list-item>
             </template>
             <v-list-item
@@ -32,7 +35,7 @@
               :value="menuChildChild.nameMenu"
               @click="handleActiveMenu(menuChildChild)"
               class="child-child"
-              :class="[{'active-menu' : menuChildChild.id === idActive}]"
+              :class="[{ 'active-menu': menuChildChild.id === idActive }]"
             ></v-list-item>
           </v-list-group>
         </v-list>
@@ -51,9 +54,10 @@ const listMenuNavBar = ref<NameMenuNavType[]>(listNameMenuNav)
 const idActive = ref<number>(0)
 
 const handleActiveMenu = (menu: NameMenuNavType) => {
-  idActive.value = menu.id
+  idActive.value = menu.id;
   if (menu.path) {
-    router.push(menu.path)
+    router.push(menu.path);
   }
-}
+};
 </script>
+

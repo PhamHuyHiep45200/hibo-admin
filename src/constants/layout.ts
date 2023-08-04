@@ -1,4 +1,5 @@
-import { NameMenuNavType, MenuListProfile } from "../types/layout";
+import { NameMenuNavType, MenuListProfile, MenuListHeader, ProfileUser } from "../types/layout";
+import imgUser from "@/assets/images/img-user.jpg";
 
 export const listNameMenuNav: NameMenuNavType[] = [
   {
@@ -96,3 +97,25 @@ export const listNameMenuProfile: MenuListProfile[] = [
     path: "/log-out"
   },
 ]
+
+export const listMenuHeaderBar: MenuListHeader[] = [
+  {
+    id: 1,
+    nameMenu: "Message",
+    icon: "mdi-chat-processing-outline",
+    path: "/message",
+    numOf: 10
+  },
+  {
+    id: 2,
+    nameMenu: "Notify",
+    icon: "mdi-bell-ring-outline",
+    path: "/notify",
+    numOf: 3
+  },
+]
+
+export const profileUser: ProfileUser = {
+  nameUser: "Hibo Foods",
+  imagePath: imgUser
+}
