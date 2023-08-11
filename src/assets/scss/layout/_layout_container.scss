@@ -1,0 +1,27 @@
+.layout-container {
+    height: 100%;
+    .v-layout {
+        height: 100%;
+    }
+    .display-none {
+        display: none;
+    }
+    .header-bar {
+        height: $heighHeaderBar;
+        .v-toolbar__content {
+            height: $heighHeaderBar !important;
+          }
+    }
+    .v-navigation-drawer {
+        transform: none !important;
+    }
+    .v-main {
+        --v-layout-left: 0px !important;
+        --v-layout-right: 0px;
+        --v-layout-top: 0px !important;
+        --v-layout-bottom: 0px;
+        width: calc(100vw - 16rem) !important;
+        height: calc(100vh - 5rem) !important;
+        margin: 5rem 0 0 16rem;
+    }
+}
