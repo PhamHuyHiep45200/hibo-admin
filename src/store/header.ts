@@ -1,12 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // src/store/tasks.ts
 import { Module } from "vuex";
+import RootState from "./rootState";
 
 interface VisibleModal {
   visibleFlagModal: boolean;
 }
 
-const headerModule: Module<State, RootState> = {
+const headerModule: Module<VisibleModal, RootState> = {
   state: {
     visibleFlagModal: false,
   },
