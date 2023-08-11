@@ -27,7 +27,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "vue"],
   rules: {
     "no-console": "error",
-    indent: ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "max-len": ["error", { code: 160, ignoreUrls: true }],
     "max-lines": ["error", 200],
     curly: ["error", "all"],

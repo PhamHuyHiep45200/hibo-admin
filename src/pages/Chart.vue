@@ -1,28 +1,19 @@
 <template>
-  <div class="chart">
-    <Bar id="my-chart-id" :options="chartOptions" :data="chartData" />
+  <div class="chart h-full">
+    <ChartCardTop />
+    <div class="grid grid-cols-3 gap-4 w-full">
+      <div class="col-span-2">
+        <BarChartContainer />
+      </div>
+      <div class="h-full">
+        <PieChartContainer />
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-import { Bar } from "vue-chartjs";
-import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from "chart.js";
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
-
-export default {
-  name: "chart",
-  components: { Bar },
-  data() {
-    return {
-      chartData: {
-        labels: ["January", "February", "March"],
-        datasets: [{ data: [40, 20, 12] }],
-      },
-      chartOptions: {
-        responsive: true,
-      },
-    };
-  },
-  method: {},
-};
+<script setup lang="ts">
+import ChartCardTop from "@/components/Dashboard/LineChart/index.vue";
+import BarChartContainer from "@/components/Dashboard/BarChart/index.vue";
+import PieChartContainer from "@/components/Dashboard/PieChart/index.vue";
 </script>

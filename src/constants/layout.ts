@@ -1,4 +1,4 @@
-import { NameMenuNavType, MenuListProfile, MenuListHeader, ProfileUser } from "../types/layout";
+import { NameMenuNavType, MenuListProfile, MenuListHeader, ProfileUser } from "@/types/layout";
 import imgUser from "@/assets/images/img-user.jpg";
 
 export const listNameMenuNav: NameMenuNavType[] = [
@@ -15,7 +15,7 @@ export const listNameMenuNav: NameMenuNavType[] = [
             id: 111,
             nameMenu: "Analytics Dashboard",
             icon: "mdi-circle-outline",
-            path: "/analytics",
+            path: "/chart",
           },
           {
             id: 112,
