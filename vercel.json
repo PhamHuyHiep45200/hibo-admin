@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+    "source": "/(.*)",
+    "destination": "hibo-admin-71ns7zmgy-phamhuyhiep45200.vercel.app/"
+    }
+]
+}
